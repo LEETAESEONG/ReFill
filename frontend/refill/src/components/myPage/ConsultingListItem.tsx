@@ -29,10 +29,10 @@ type detailConsulting = {
 
 const DummyData2 = {
   content: "",
-  doctorName: "김싸피 교수님",
+  doctorName: "김정필 교수님",
   startDateTime: "2023-06-30",
   memberAddress: "광주광역시 북구 호동로 72-9 리치빌 302호",
-  memberName: "김싸피",
+  memberName: "김정필",
   birthDay: "900110",
   // 상담소견
   detailConsultingInfo: "현재 탈모 진행이 꽤나 진행됨",

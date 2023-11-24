@@ -367,7 +367,7 @@ const DetailHospital: React.FC = () => {
   const RegistDoc = async (hospitalid: number, formData: any) => {
     axios
       .post(
-        `https://i9c201.p.ssafy.io/api/v1/hospital/${hospitalid}/doctor`,
+        `/${hospitalid}/doctor`,
         formData,
         {
           headers: {
@@ -407,7 +407,7 @@ const DetailHospital: React.FC = () => {
     console.log("ok");
     axios
       .put(
-        `https://i9c201.p.ssafy.io/api/v1/hospital/${hospitalid}/doctor/${doctorid}`,
+        `/${hospitalid}/doctor/${doctorid}`,
         formData,
         {
           headers: {
@@ -441,7 +441,7 @@ const DetailHospital: React.FC = () => {
   const DeleteDoc = async (doctorid: number) => {
     axios
       .delete(
-        `https://i9c201.p.ssafy.io/api/v1/hospital/${hospitalId}/doctor/${doctorid}`,
+        `/${hospitalId}/doctor/${doctorid}`,
         {
           headers: {
             // "Content-Type": "multipart/form-data",
@@ -531,11 +531,11 @@ const DetailHospital: React.FC = () => {
         <div className="image-container">
           <Bannerimg
             className="fit-image"
-            src={`https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${hospitalData.hospitalProfileImg}`}
+            src={`/${hospitalData.hospitalProfileImg}`}
           />
         </div>
         <Profileimg
-          src={`https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${hospitalData.hospitalProfileImg}`}
+          src={`/${hospitalData.hospitalProfileImg}`}
         />
       </BannerContainer>
       <Containers>
@@ -610,7 +610,7 @@ const DetailHospital: React.FC = () => {
                         style={{ width: "150px" }}
                       >
                         <img
-                          src={`https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${doctor.profileImg}`}
+                          src={`/${doctor.profileImg}`}
                           alt={doctor.name}
                           className="w-28 h-28 rounded-full mt-10"
                         />

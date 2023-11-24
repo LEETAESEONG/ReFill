@@ -270,7 +270,7 @@ const Mypage: React.FC = () => {
               <Profileimg
                 src={
                   userData.profileImg
-                    ? `https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${userData.profileImg}`
+                    ? `/${userData.profileImg}`
                     : `${default_profile}`
                 }
                 className="mb-3"
@@ -326,7 +326,7 @@ const Mypage: React.FC = () => {
                         setuserData={setuserData}
                         profile={
                           checkimg
-                            ? `https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${userData.profileImg}`
+                            ? `/${userData.profileImg}`
                             : `${default_profile}`
                         }
                         onModify={(formData) => ModifyDoc(formData)}

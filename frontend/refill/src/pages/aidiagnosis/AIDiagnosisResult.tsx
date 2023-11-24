@@ -72,7 +72,7 @@ const AIDiagnosisResult: React.FC = () => {
           <div className="grid grid-rows-2 lg:mx-30 md:mx-20 sm:mx-10">
             <div className="grid grid-cols-8 gap-5">
               <ImgItem
-                src={`https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${diagnosisImage}`}
+                src={`/${diagnosisImage}`}
                 title="현재 사진"
                 colStart={colOneStart}
                 colEnd={colThreeEnd}

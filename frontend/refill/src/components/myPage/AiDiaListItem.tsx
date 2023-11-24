@@ -20,7 +20,7 @@ const AiDiaListItem: React.FC<AiDiaListProps> = ({ aiListItem }) => {
         <img
           className="rounded-md h-full ml-2"
           src={
-            `https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/` +
+            `` +
             `${aiListItem.diagnosisImage}`
           }
           alt=""

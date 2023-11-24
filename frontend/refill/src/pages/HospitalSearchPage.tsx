@@ -729,7 +729,7 @@ export const HospitalSearch: React.FC = () => {
                       >
                         <div style={{ display: "flex", alignItems: "center" }}>
                           <Avatar
-                            src={`https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${data.hospitalProfileImg}`}
+                            src={`/${data.hospitalProfileImg}`}
                           />
                           <Typography variant="h4" sx={{ margin: "15px" }}>
                             {data.name}

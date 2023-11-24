@@ -97,7 +97,7 @@ const DetailPatient: React.FC<DetailPatientProps> = ({
   const getToken = async (reservationId: number) => {
     try {
       const response = await axios.get(
-        `https://i9c201.p.ssafy.io/api/v1/consulting/connection/${reservationId}`,
+        `/${reservationId}`,
         // `http://localhost:3000/api/v1/consulting/connection/${reservationId}`,
         {
           headers: {
@@ -122,7 +122,7 @@ const DetailPatient: React.FC<DetailPatientProps> = ({
 
   const [canJoin, setCanJoin] = useState(false);
 
-  const imgUrl = `https://ssafyfinal.s3.ap-northeast-2.amazonaws.com/${selectedMember.hairImage}`;
+  const imgUrl = `/${selectedMember.hairImage}`;
   // 입장하는 함수
   // 입장하는 함수
   const joinSession = ({
